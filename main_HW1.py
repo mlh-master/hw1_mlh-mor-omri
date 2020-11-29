@@ -74,7 +74,6 @@ if __name__ == '__main__':
     c_samp = nan2num_samp(CTG_features, extra_feature)
 
     #####################################
-
     feat = 'MSTV'
     print(CTG_features[feat].iloc[0:5])  # print first 5 values
     print(c_samp[feat].iloc[0:5])
@@ -123,8 +122,8 @@ if __name__ == '__main__':
 
     #####################################
 
-    feature = ''  # fill your chosen feature
-    thresh =   # fill the threshold
+    feature = 'AC'  # fill your chosen feature
+    thresh = 120  # fill the threshold
     filt_feature = phpr(c_samp, feature, thresh)
 
     #####################################
@@ -134,12 +133,11 @@ if __name__ == '__main__':
     orig_feat = CTG_features.columns.values
 
     #####################################
-
     selected_feat = ('LB', 'ASTV')
-    orig = nsd(CTG_features, selected_feat, flag=False)
-    nsd_std = nsd(CTG_features, selected_feat, mode='standard', flag=False)
-    nsd_norm = nsd(CTG_features, selected_feat, mode='MinMax', flag=False)
-    nsd_norm_mean = nsd(CTG_features, selected_feat, mode='mean', flag=False)
+    orig = nsd(CTG_features, selected_feat, flag=True)
+    nsd_std = nsd(CTG_features, selected_feat, mode='standard', flag=True)
+    nsd_norm = nsd(CTG_features, selected_feat, mode='MinMax', flag=True)
+    nsd_norm_mean = nsd(CTG_features, selected_feat, mode='mean', flag=True)
 
     #####################################
 
@@ -214,11 +212,11 @@ if __name__ == '__main__':
 
     #####################################
 
-    mode = ''  # choose a mode from the `nsd`
+    mode = 'False'  # choose a mode from the `nsd`
     # complete the arguments for L2:
     logreg_l2 = LogisticRegression(penalty='l2', solver='saga', multi_class='ovr', max_iter=10000, )
     # complete the nsd function:
-    y_pred_2, w2 = pred_log(logreg_l2, )
+    y_pred, w_norm_std = pred_log(logreg, nsd(X_train, mode=mode), y_train, nsd(X_test, mode=mode))  # complete this function using nsd function
     cnf_matrix = metrics.confusion_matrix(y_test, y_pred_2)
     ax1 = plt.subplot(211)
     sns.heatmap(cnf_matrix, annot=True, xticklabels=['Normal', 'Suspect', 'Pathology'],
@@ -246,7 +244,7 @@ if __name__ == '__main__':
 
     C = []  # make a list of up to 6 different values of regularization parameters and examine their
     # effects
-    K =   # choose a number of folds
+    K =  '' # choose a number of folds
     mode = ''  # mode of nsd function
     val_dict = cv_kfold(X_train, y_train, C=C, penalty=['l1', 'l2'], K=K, mode=mode)
 
@@ -263,7 +261,7 @@ if __name__ == '__main__':
 
     #####################################
 
-    C =   # complete this part according to your best result
+    C =  '' # complete this part according to your best result
     penalty = ''  # complete this part according to your best result
     logreg = LogisticRegression(solver='saga', multi_class='ovr', penalty=penalty, C=C, max_iter=10000)
     y_pred, w = pred_log(logreg, )  # complete this function using nsd function
