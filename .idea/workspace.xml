@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bdfb8317-f598-4d9f-9f10-d6cec5fc55e5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HW1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lin_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lin_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/HW1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/HW1-checkpoint.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <workItem from="1606471746753" duration="13772000" />
       <workItem from="1606638454018" duration="5578000" />
       <workItem from="1606664059967" duration="1298000" />
-      <workItem from="1606839221533" duration="862000" />
+      <workItem from="1606839221533" duration="1082000" />
     </task>
     <servers />
   </component>
