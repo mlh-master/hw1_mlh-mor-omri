@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdfb8317-f598-4d9f-9f10-d6cec5fc55e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Repo_1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/HW1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_CTG.xls" beforeDir="false" afterPath="$PROJECT_DIR$/clean_CTG.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lin_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/lin_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_HW1.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_HW1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +63,9 @@
       <workItem from="1605970951439" duration="1469000" />
       <workItem from="1606236018412" duration="1089000" />
       <workItem from="1606471746753" duration="13772000" />
-      <workItem from="1606638454018" duration="5014000" />
+      <workItem from="1606638454018" duration="5578000" />
+      <workItem from="1606664059967" duration="1298000" />
+      <workItem from="1606839221533" duration="862000" />
     </task>
     <servers />
   </component>
